@@ -1,15 +1,37 @@
-<p></p>
-<h3>Reports works!</h3>
-<ul>
-  <li>
-    <a [routerLink]="'basic'" routerLinkActive="active"> Basic </a>
-  </li>
-  <li>
-    <a [routerLink]="'advanced'" routerLinkActive="active"> Advanced </a>
-  </li>
-  <li>
-    <a [routerLink]="'custom'" routerLinkActive="active"> Custom </a>
-  </li>
-</ul>
+<div class="container">
+
+  <div class="card-deck mb-3 text-center">
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Basic</h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title pricing-card-title"><small class="text-muted">Basic Report</small></h1>
+        <button [routerLink]="'basic'" type="button" class="btn btn-block btn-outline-primary">Go</button>
+      </div>
+    </div>
+  
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Advanced</h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title pricing-card-title"><small class="text-muted">Advanced Report</small></h1>
+        <button [routerLink]="'advanced'" type="button" class="btn btn-block btn-outline-primary">Go</button>
+      </div>
+    </div>
+  
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Custom</h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title pricing-card-title"><small class="text-muted">Custom Report</small></h1>
+        <button [routerLink]="'custom'" type="button" class="btn btn-block btn-outline-primary">Go</button>
+      </div>
+    </div>
+  </div>
+
+</div>
 
 <router-outlet></router-outlet>

@@ -1,12 +1,28 @@
-<p></p>
-<h3>Application works!</h3>
-<ul>
-  <li>
-    <a [routerLink]="'dashboard'" routerLinkActive="active"> Dashboard </a>
-  </li>
-  <li>
-    <a [routerLink]="'reports'" routerLinkActive="active"> Reports </a>
-  </li>
-</ul>
+<div class="container">
+
+  <div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">Dashboard</strong>
+          <p class="card-text mb-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in ante at sem hendrerit rhoncus vitae eget nulla. Cras convallis sed massa at fermentum.</p>
+            <button [routerLink]="'dashboard'" type="button" class="btn btn-block btn-outline-primary">Go</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">Reports</strong>
+          <p class="mb-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in ante at sem hendrerit rhoncus vitae eget nulla. Cras convallis sed massa at fermentum.
+          </p>
+          <button [routerLink]="'reports'" type="button" class="btn btn-block btn-outline-primary">Go</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
 
 <router-outlet></router-outlet>
