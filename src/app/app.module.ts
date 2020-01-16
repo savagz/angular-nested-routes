@@ -3,10 +3,10 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
 import { AboutComponent } from './about/about.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
-import { ApplicationComponent } from './application/application.component';
 import { Page404Component } from './page404/page404.component';
 
 @NgModule({
@@ -15,7 +15,6 @@ import { Page404Component } from './page404/page404.component';
     AboutComponent,
     LoginComponent,
     RegisterComponent,
-    ApplicationComponent,
     Page404Component
   ],
   imports: [
