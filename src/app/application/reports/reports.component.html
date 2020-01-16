@@ -1,1 +1,15 @@
-<p>reports works!</p>
+<p></p>
+<h3>Reports works!</h3>
+<ul>
+  <li>
+    <a [routerLink]="'basic'" routerLinkActive="active"> Basic </a>
+  </li>
+  <li>
+    <a [routerLink]="'advanced'" routerLinkActive="active"> Advanced </a>
+  </li>
+  <li>
+    <a [routerLink]="'custom'" routerLinkActive="active"> Custom </a>
+  </li>
+</ul>
+
+<router-outlet></router-outlet>
